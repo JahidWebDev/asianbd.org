@@ -62,7 +62,7 @@ const Navbar = () => {
     </div>
 
     {/* Hotline Section */}
-  <a 
+  <Link 
   href="tel:+8801788360303"
   className="flex items-center space-x-2 text-sm font-semibold 
              text-yellow-400 hover:text-yellow-300 
@@ -70,7 +70,7 @@ const Navbar = () => {
 >
   <FiPhoneCall className="text-xl" />
   <span>+8801788-360303</span>
-</a>
+</Link>
 
     {/* Contact Button */}
     <Link
@@ -118,25 +118,25 @@ const Navbar = () => {
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-black border-t border-gray-800`}>
         <div className="px-4 pt-4 pb-6 space-y-3">
 
-          <a href="/" className="block text-gray-300 hover:text-red-400 text-lg font-medium">
+          <Link href="/" className="block text-gray-300 hover:text-red-400 text-lg font-medium">
             Home
-          </a>
+          </Link>
 
-          <a href="/about" className="block text-gray-300 hover:text-green-400 text-lg font-medium">
+          <Link href="/about" className="block text-gray-300 hover:text-green-400 text-lg font-medium">
             About
-          </a>
+          </Link>
 
-          <a href="/services" className="block text-gray-300 hover:text-blue-400 text-lg font-medium">
+          <Link href="/services" className="block text-gray-300 hover:text-blue-400 text-lg font-medium">
             Services
-          </a>
+          </Link>
 
           {/* Contact Button Mobile */}
-          <a
+          <Link
             href="/contact"
             className="block bg-yellow-500 text-black text-center py-3 rounded-md font-semibold hover:bg-yellow-400 transition duration-150"
           >
             Contact
-          </a>
+          </Link>
 
         </div>
       </div>
